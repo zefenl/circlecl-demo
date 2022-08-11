@@ -3,9 +3,6 @@ jobs:
   build:
     docker:
       - image: cimg/node:17.2.0
-    branches:
-      only:
-        - main
     steps:
       - add_ssh_keys:
           fingerprints::
