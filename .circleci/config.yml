@@ -3,9 +3,12 @@ jobs:
   build:
     docker:
       - image: cimg/node:17.2.0
+      branches:
+        only:
+          - main
     steps:
       - add_ssh_keys:
-          fingerprints::
+          fingerprints:
             - "27:48:f3:96:d1:7a:c9:4d:17:a4:0f:da:41:bd:03:49"
       - checkout
       - run: echo "hello world"
