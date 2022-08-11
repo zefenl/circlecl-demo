@@ -1,0 +1,65 @@
+/* 全局样式表 */
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 界面最小宽度 */
+#app {
+  min-width: 1260px;
+}
+
+/* 系统主题颜色 */
+.storeColor {
+  background-color: #27ba9b !important;
+  border: 0;
+}
+.storeColor:link {
+  background-color: #27ba9b;
+  border-color: #27ba9b;
+  opacity: 0.8;
+}
+.storeColor:visited {
+  background-color: #27ba9b;
+  border-color: #27ba9b;
+  opacity: 0.8;
+}
+.storeColor:hover {
+  background-color: #27ba9b;
+  border-color: #27ba9b;
+  opacity: 0.8;
+}
+.storeColor:active {
+  background-color: #27ba9b;
+  border-color: #27ba9b;
+  opacity: 0.8;
+}
+
+
+/* 重置面包屑样式 */
+.el-breadcrumb {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+/* 重置卡片样式 */
+.el-card {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.el-table {
+  margin: 15px 0;
+}
+
+.el-cascader-panel {
+  height: 300px;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}

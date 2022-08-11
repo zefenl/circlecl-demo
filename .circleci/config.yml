@@ -2,7 +2,20 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/node:17.2.0 # the primary container, where your job's commands are run
+      - image: cimg/node:17.2.0
+    branches:
+      only:
+        - main
     steps:
-      - run: echo "hello world" # run the `echo` command
+      - add_ssh_keys:
+          fingerprints::
+            - "27:48:f3:96:d1:7a:c9:4d:17:a4:0f:da:41:bd:03:49"
+      - checkout
+      - run: echo "hello world"
       - run: npm -v
+      - run: 
+        name: Install
+        command: yarn install
+      - run:
+        name: Build
+        command: yarn build
